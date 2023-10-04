@@ -1,0 +1,18 @@
+export const MetadataKeys = {
+	IsController: "isController",
+	BasePath: "basePath",
+	ApiTag: "apiTag",
+	Routers: "routers",
+	DestructuringParameter: "destructuringParameter",
+	DestructuringPreParameter: "destructuringPreParameter",
+	ValidationQuery: "validationQuery",
+	ValidationParams: "validationParams",
+	ValidationPayload: "validationPayload",
+	ValidationQueryOptional: "ValidationQueryOptional",
+	ValidationParamsOptional: "ValidationParamsOptional",
+	ValidationPayloadOptional: "ValidationPayloadOptional",
+	Query: "query",
+	Payload: "payload",
+	Params: "params",
+	Middleware: "middleware",
+};

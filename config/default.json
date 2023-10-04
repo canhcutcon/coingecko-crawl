@@ -1,0 +1,23 @@
+{
+  "env": "development",
+  "port": 3001,
+  "documentation": {
+    "enable": true,
+    "schemes": "http",
+    "options": {
+      "info": {
+        "title": "Tokens Crawl API Documentation",
+        "version": "0.0.1"
+      },
+      "grouping": "tags",
+      "documentationPage": true
+    }
+  },
+  "jwt": {
+    "secret": "bacoor",
+    "expiredIn": "10y"
+  },
+  "database": {
+    "uri": "mongodb://localhost:27017/tokens-crawl?useNewUrlParser=true"
+  }
+}
