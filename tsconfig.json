@@ -1,33 +1,34 @@
 {
-	"compilerOptions": {
-		"module": "ES2022" /* Specify what module code is generated. */,
-		"moduleResolution": "Node",
-		// "declaration": true,  /* Specify what module code is generated. */
-		// "removeComments": true, /* Disable emitting comments. */
-		"emitDecoratorMetadata": true /* Emit design-type metadata for decorated declarations in source files. */,
-		"experimentalDecorators": true /* Enable experimental support for legacy experimental decorators. */,
-		"allowSyntheticDefaultImports": true /* Allow 'import x from y' when a module doesn't have a default export. */,
-		"target": "es2016" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
-		"sourceMap": false /* Create source map files for emitted JavaScript files. */,
-		"outDir": "./dist" /* Specify an output folder for all emitted files. */,
-		"rootDir": "./src",
-		"baseUrl": "./src" /* Specify the root folder within your source files. */,
-		"paths": {
-			"@/core/*": ["core/*"],
-			"@/models/*": ["models/*"],
-			"@/modules/*": ["modules/*"]
-		},
-		"esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */,
-		// "incremental": true,  /* Save . files to allow for incremental compilation of projects. */
-		"skipLibCheck": true /* Skip type checking all .d.ts files. */,
-		"strictNullChecks": false /* When type checking, take into account 'null' and 'undefined'. */,
-		"strictFunctionTypes": false /* When assigning functions, check to ensure parameters and the return values are subtype-compatible. */,
-		"noImplicitAny": false /* When type checking, take into account 'null' and 'undefined'. */,
-		// "strictBindCallApply": false,    /* Check that the arguments for 'bind', 'call', and 'apply' methods match the original function. */
-		"forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
-		"noFallthroughCasesInSwitch": false /* Enable error reporting for fallthrough cases in switch statements. */,
-		"strict": true,
-		"strictPropertyInitialization": false,
-		"pretty": true
-	}
+  "compilerOptions": {
+    "module": "ES2022" /* Specify what module code is generated. */,
+    "moduleResolution": "Node",
+    // "declaration": true,  /* Specify what module code is generated. */
+    // "removeComments": true, /* Disable emitting comments. */
+    "emitDecoratorMetadata": true /* Emit design-type metadata for decorated declarations in source files. */,
+    "experimentalDecorators": true /* Enable experimental support for legacy experimental decorators. */,
+    "allowSyntheticDefaultImports": true /* Allow 'import x from y' when a module doesn't have a default export. */,
+    "target": "es2016" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
+    "sourceMap": false /* Create source map files for emitted JavaScript files. */,
+    "outDir": "./dist" /* Specify an output folder for all emitted files. */,
+    "rootDir": "./src",
+    "baseUrl": "./src" /* Specify the root folder within your source files. */,
+    "paths": {
+      "@/core/*": ["core/*"],
+      "@/models/*": ["models/*"],
+      "@/modules/*": ["modules/*"]
+    },
+    // "resolveJsonModule": true,
+    "esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */,
+    // "incremental": true,  /* Save . files to allow for incremental compilation of projects. */
+    "skipLibCheck": true /* Skip type checking all .d.ts files. */,
+    "strictNullChecks": false /* When type checking, take into account 'null' and 'undefined'. */,
+    "strictFunctionTypes": false /* When assigning functions, check to ensure parameters and the return values are subtype-compatible. */,
+    "noImplicitAny": false /* When type checking, take into account 'null' and 'undefined'. */,
+    // "strictBindCallApply": false,    /* Check that the arguments for 'bind', 'call', and 'apply' methods match the original function. */
+    "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
+    "noFallthroughCasesInSwitch": false /* Enable error reporting for fallthrough cases in switch statements. */,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "pretty": true
+  }
 }

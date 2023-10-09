@@ -19,5 +19,11 @@
   },
   "database": {
     "uri": "mongodb://localhost:27017/tokens-crawl?useNewUrlParser=true"
+  },
+  "redis": {
+    "prefix": "development",
+    "host": "",
+    "port": 0,
+    "password": ""
   }
 }

@@ -24,6 +24,12 @@ export type ConfigType = {
 	database?: {
 		uri?: string;
 	};
+	redis?: {
+		prefix: string
+		host?: string
+		port?: number
+		password?: string
+	};
 
 };
 
@@ -48,6 +54,12 @@ const configSchema = Joi.object<ConfigType>({
 	}).required(),
 	database: Joi.object({
 		uri: Joi.string().required(),
+	}).required(),
+	redis: Joi.object({
+		prefix: Joi.string().required(),
+		host: Joi.string().allow('').optional(),
+		port: Joi.number().optional(),
+		password: Joi.string().allow('').optional(),
 	}).required(),
 });
 
