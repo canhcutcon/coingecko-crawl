@@ -19,9 +19,9 @@
   },
   {
     "id": "klay-token",
-    "chain_identifier": null,
+    "chain_identifier": 8217,
     "name": "Klaytn",
-    "shortname": ""
+    "shortname": "klay"
   },
   {
     "id": "findora",
@@ -499,7 +499,7 @@
   },
   {
     "id": "energi",
-    "chain_identifier": null,
+    "chain_identifier": 246,
     "name": "Energi",
     "shortname": ""
   },

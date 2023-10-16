@@ -3,10 +3,16 @@ import { Model, Schema, model } from "mongoose"
 
 const schema = new Schema<any, any>(
     {
-        chainId: { type: Number, required: true, unique: true },
-        name: { type: String, required: true },
-        key: { type: String, default: null, index: true, unique: true },
+        chainId: { type: Number },
+        name: { type: String },
+        key: { type: String, index: true },
         symbol: { type: String, default: null, index: true },
+        explorers: { type: [String], default: [] },
+        faucets: { type: [String], default: [] },
+        decimal: Number,
+        rpc: { type: [String], default: [] },
+        chain: String,
+        textSearch: String
     },
     { timestamps: true }
 );
