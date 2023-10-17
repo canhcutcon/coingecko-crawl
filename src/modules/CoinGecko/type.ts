@@ -49,7 +49,10 @@ export class GetPriceChangeQuery extends Pagination {
     tokenAddress?: string
 }
 
-export class GetAllCoinQuery extends Pagination { }
+export class GetAllCoinQuery extends Pagination {
+    @JoiSchema(Joi.string().optional())
+    key?: string
+}
 
 export type GetAllWithPaginationType = {
     items: ICoinGeckoDoc[]

@@ -18,7 +18,7 @@
     "expiredIn": "10y"
   },
   "database": {
-    "uri": "mongodb://localhost:27017/tokens-crawl?useNewUrlParser=true"
+    "uri": "mongodb+srv://VoThiTraGiang_19510771:H9kUsyraq4h6sm99@cluster0.1odnozv.mongodb.net/coingecko_crawler?useNewUrlParser=true"
   },
   "redis": {
     "prefix": "development",
@@ -28,6 +28,6 @@
   },
   "cronTime": {
     "insertNewToken": "0 0 */15 * *",
-    "updatePriceMarket": "0 */12 * * *"
+    "updatePriceMarket": "7 9 * * *"
   }
 }
