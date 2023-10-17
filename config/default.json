@@ -25,5 +25,9 @@
     "host": "",
     "port": 0,
     "password": ""
+  },
+  "cronTime": {
+    "insertNewToken": "0 0 */15 * *",
+    "updatePriceMarket": "0 */12 * * *"
   }
 }

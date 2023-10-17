@@ -17,7 +17,22 @@ export interface ICoinGecko {
     low24h: number;
     high24h: number;
     currentPrice: number;
+    chainId: number | null
 }
 
+export interface ICoinListRaw {
+    id?: string;
+    name?: string;
+    chain_identifier?: number;
+    shortname?: string;
+    platforms?: object[];
+}
+
+export interface ICoinMarketRaw {
+    id?: string;
+    name?: string;
+    chain_identifier?: number;
+    shortname?: string;
+}
 export interface ICoinGeckoDoc extends Document, ICoinGecko { }
 

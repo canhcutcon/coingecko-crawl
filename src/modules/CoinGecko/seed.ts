@@ -39,6 +39,7 @@ const CoinGeckoSeed: CoinGeckoSeedType = {
         }
     },
 
+
     getPlatform: async (platforms) => {
         const platform = {};
 

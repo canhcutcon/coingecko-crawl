@@ -16,6 +16,7 @@ const schema = new Schema<any, any>(
         low24h: { type: Number, default: 0 },
         high24h: { type: Number, default: 0 },
         currentPrice: { type: Number, default: 0 },
+        chainId: Number
     },
     { timestamps: true }
 );

@@ -21,7 +21,8 @@
     "dev:serve": "nodemon --es-module-specifier-resolution=node  -e js -w dist dist/main.js",
     "dev": "rm -rf dist && yarn dev:tsc & (sleep 10 && yarn dev:serve)",
     "build": "rm -rf dist && tsc --project tsconfig.json && tsc-alias -p tsconfig.json",
-    "start:script": "node --es-module-specifier-resolution=node  dist/script.js"
+    "start:script": "node --es-module-specifier-resolution=node  dist/script.js",
+    "start:cron": "node --es-module-specifier-resolution=node  dist/cronjob.js"
   },
   "author": "giang vo",
   "license": "ISC",

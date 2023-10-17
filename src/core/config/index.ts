@@ -25,11 +25,15 @@ export type ConfigType = {
 		uri?: string;
 	};
 	redis?: {
-		prefix: string
-		host?: string
-		port?: number
-		password?: string
+		prefix: string;
+		host?: string;
+		port?: number;
+		password?: string;
 	};
+	cronTime?: {
+		insertNewToken?: string;
+		updatePriceMarket?: string;
+	}
 
 };
 
@@ -61,6 +65,10 @@ const configSchema = Joi.object<ConfigType>({
 		port: Joi.number().optional(),
 		password: Joi.string().allow('').optional(),
 	}).required(),
+	cronTime: Joi.object({
+		insertNewToken: Joi.string().required(),
+		updatePriceMarket: Joi.string().required(),
+	})
 });
 
 const AppConfig: ConfigType & {
